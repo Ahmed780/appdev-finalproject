@@ -20,11 +20,13 @@ namespace appdev_finalproject
 
         private void loginForm_Load(object sender, EventArgs e)
         {
-
+            // Implement a read from file method that runs every time the app starts
         }
 
         private void debugButton_Click(object sender, EventArgs e)
         {
+            // FIXME: Do not let the user create an Admin whenever he wants. Have predefined Admin.csv file
+            // or something similar.
             Admin admin = new Admin("name", "password");
             admin.addUser(admin.generateId(),"Dharmin","123456");
         }
