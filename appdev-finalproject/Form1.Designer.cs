@@ -30,7 +30,7 @@ namespace appdev_finalproject
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginForm));
-            this.userLabel = new System.Windows.Forms.Label();
+            this.idLabel = new System.Windows.Forms.Label();
             this.pwLabel = new System.Windows.Forms.Label();
             this.unameTextBox = new System.Windows.Forms.TextBox();
             this.pwTextBox = new System.Windows.Forms.TextBox();
@@ -41,19 +41,19 @@ namespace appdev_finalproject
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // userLabel
+            // idLabel
             // 
-            this.userLabel.AutoSize = true;
-            this.userLabel.Location = new System.Drawing.Point(13, 213);
-            this.userLabel.Name = "userLabel";
-            this.userLabel.Size = new System.Drawing.Size(58, 13);
-            this.userLabel.TabIndex = 1;
-            this.userLabel.Text = "Username:";
+            this.idLabel.AutoSize = true;
+            this.idLabel.Location = new System.Drawing.Point(23, 213);
+            this.idLabel.Name = "idLabel";
+            this.idLabel.Size = new System.Drawing.Size(46, 13);
+            this.idLabel.TabIndex = 1;
+            this.idLabel.Text = "User ID:";
             // 
             // pwLabel
             // 
             this.pwLabel.AutoSize = true;
-            this.pwLabel.Location = new System.Drawing.Point(13, 241);
+            this.pwLabel.Location = new System.Drawing.Point(13, 240);
             this.pwLabel.Name = "pwLabel";
             this.pwLabel.Size = new System.Drawing.Size(56, 13);
             this.pwLabel.TabIndex = 2;
@@ -123,7 +123,7 @@ namespace appdev_finalproject
             this.Controls.Add(this.pwTextBox);
             this.Controls.Add(this.unameTextBox);
             this.Controls.Add(this.pwLabel);
-            this.Controls.Add(this.userLabel);
+            this.Controls.Add(this.idLabel);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "loginForm";
@@ -138,7 +138,7 @@ namespace appdev_finalproject
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label userLabel;
+        private System.Windows.Forms.Label idLabel;
         private System.Windows.Forms.Label pwLabel;
         private System.Windows.Forms.TextBox unameTextBox;
         private System.Windows.Forms.TextBox pwTextBox;
