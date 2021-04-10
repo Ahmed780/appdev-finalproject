@@ -24,7 +24,7 @@ namespace appdev_finalproject
         {
             try
             {
-                using (System.IO.StreamWriter file = new System.IO.StreamWriter("path",true))
+                using (System.IO.StreamWriter file = new System.IO.StreamWriter("..\\..\\Users.csv", true))
                 {
                     file.WriteLine(id + "," + name + "," + password);
                 }

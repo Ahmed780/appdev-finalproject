@@ -8,11 +8,5 @@ namespace appdev_finalproject
 {
     class Student
     {
-        public static void main(String[] args)
-        {
-
-            Admin admin = new Admin("Admin", "Bob");
-            admin.addUser("id", "name", "password");
-        }
     }
 }

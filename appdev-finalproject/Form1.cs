@@ -22,5 +22,11 @@ namespace appdev_finalproject
         {
 
         }
+
+        private void debugButton_Click(object sender, EventArgs e)
+        {
+            Admin admin = new Admin("name", "password");
+            admin.addUser(admin.generateId(),"Dharmin","123456");
+        }
     }
 }

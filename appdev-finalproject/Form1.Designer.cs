@@ -82,6 +82,7 @@ namespace appdev_finalproject
             this.debugButton.TabIndex = 5;
             this.debugButton.Text = "Debug";
             this.debugButton.UseVisualStyleBackColor = true;
+            this.debugButton.Click += new System.EventHandler(this.debugButton_Click);
             // 
             // loginButton
             // 

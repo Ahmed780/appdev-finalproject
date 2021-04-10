@@ -12,12 +12,13 @@ namespace appdev_finalproject
 
         public Admin(string name, string password) : base(name, password)
         {
-            base.Id = generateId();
+            
         }
 
         public override string generateId()
         {
-            return String.Format("A%04d", nextId++);
+            nextId = nextId + 1;
+            return String.Format("A{0:0000}", nextId);
         }
 
         public static int NextId { get => nextId; set => nextId = value; }
