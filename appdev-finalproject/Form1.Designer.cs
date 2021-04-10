@@ -1,7 +1,7 @@
 ﻿
 namespace appdev_finalproject
 {
-    partial class Form1
+    partial class loginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,88 +29,105 @@ namespace appdev_finalproject
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginForm));
+            this.userLabel = new System.Windows.Forms.Label();
+            this.pwLabel = new System.Windows.Forms.Label();
+            this.unameTextBox = new System.Windows.Forms.TextBox();
+            this.pwTextBox = new System.Windows.Forms.TextBox();
+            this.debugButton = new System.Windows.Forms.Button();
+            this.loginButton = new System.Windows.Forms.Button();
+            this.schoolSystemLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
+            // userLabel
+            // 
+            this.userLabel.AutoSize = true;
+            this.userLabel.Location = new System.Drawing.Point(13, 213);
+            this.userLabel.Name = "userLabel";
+            this.userLabel.Size = new System.Drawing.Size(58, 13);
+            this.userLabel.TabIndex = 1;
+            this.userLabel.Text = "Username:";
+            // 
+            // pwLabel
+            // 
+            this.pwLabel.AutoSize = true;
+            this.pwLabel.Location = new System.Drawing.Point(13, 241);
+            this.pwLabel.Name = "pwLabel";
+            this.pwLabel.Size = new System.Drawing.Size(56, 13);
+            this.pwLabel.TabIndex = 2;
+            this.pwLabel.Text = "Password:";
+            // 
+            // unameTextBox
+            // 
+            this.unameTextBox.Location = new System.Drawing.Point(75, 210);
+            this.unameTextBox.Name = "unameTextBox";
+            this.unameTextBox.Size = new System.Drawing.Size(176, 20);
+            this.unameTextBox.TabIndex = 3;
+            // 
+            // pwTextBox
+            // 
+            this.pwTextBox.Location = new System.Drawing.Point(75, 237);
+            this.pwTextBox.Name = "pwTextBox";
+            this.pwTextBox.Size = new System.Drawing.Size(176, 20);
+            this.pwTextBox.TabIndex = 4;
+            this.pwTextBox.UseSystemPasswordChar = true;
+            // 
+            // debugButton
+            // 
+            this.debugButton.Location = new System.Drawing.Point(384, 279);
+            this.debugButton.Name = "debugButton";
+            this.debugButton.Size = new System.Drawing.Size(75, 23);
+            this.debugButton.TabIndex = 5;
+            this.debugButton.Text = "Debug";
+            this.debugButton.UseVisualStyleBackColor = true;
+            // 
+            // loginButton
+            // 
+            this.loginButton.Location = new System.Drawing.Point(257, 222);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Size = new System.Drawing.Size(75, 23);
+            this.loginButton.TabIndex = 6;
+            this.loginButton.Text = "Login";
+            this.loginButton.UseVisualStyleBackColor = true;
+            // 
+            // schoolSystemLabel
+            // 
+            this.schoolSystemLabel.AutoSize = true;
+            this.schoolSystemLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.schoolSystemLabel.Location = new System.Drawing.Point(109, 59);
+            this.schoolSystemLabel.Name = "schoolSystemLabel";
+            this.schoolSystemLabel.Size = new System.Drawing.Size(359, 39);
+            this.schoolSystemLabel.TabIndex = 7;
+            this.schoolSystemLabel.Text = "Vanier School System";
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(129, 12);
+            this.pictureBox1.Image = global::appdev_finalproject.Properties.Resources.login_icon_nobg;
+            this.pictureBox1.Location = new System.Drawing.Point(16, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(175, 160);
+            this.pictureBox1.Size = new System.Drawing.Size(87, 149);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 213);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 241);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(55, 211);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(176, 20);
-            this.textBox1.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(55, 241);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(176, 20);
-            this.textBox2.TabIndex = 4;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(238, 299);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(238, 228);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // Form1
+            // loginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(453, 372);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(471, 314);
+            this.Controls.Add(this.schoolSystemLabel);
+            this.Controls.Add(this.loginButton);
+            this.Controls.Add(this.debugButton);
+            this.Controls.Add(this.pwTextBox);
+            this.Controls.Add(this.unameTextBox);
+            this.Controls.Add(this.pwLabel);
+            this.Controls.Add(this.userLabel);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "loginForm";
+            this.Text = "Vanier School System - Login";
+            this.Load += new System.EventHandler(this.loginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -120,12 +137,13 @@ namespace appdev_finalproject
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label userLabel;
+        private System.Windows.Forms.Label pwLabel;
+        private System.Windows.Forms.TextBox unameTextBox;
+        private System.Windows.Forms.TextBox pwTextBox;
+        private System.Windows.Forms.Button debugButton;
+        private System.Windows.Forms.Button loginButton;
+        private System.Windows.Forms.Label schoolSystemLabel;
     }
 }
 
